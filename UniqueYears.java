@@ -1,7 +1,12 @@
 /*  This program will find unique years mentioned in String */
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
 class UniqueYears{
   public static int getCountOfUniqueYears(String input) {
 		String pattern = "\\d\\d-\\d\\d-\\d\\d\\d\\d";
